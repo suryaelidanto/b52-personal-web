@@ -32,7 +32,7 @@
     <div class="blog">
         <div class="blog-form">
             <div class="form-container">
-                <form>
+                <form onsubmit="addBlog(event)">
                     <h1>Create Post Blog</h1>
                     <div>
                         <label for="input-blog-title">Title</label>
@@ -62,7 +62,7 @@
         <hr class="line" />
         <div id="contents" class="blog-list">
             <!-- dynamic content would be here -->
-            <div class="blog-list-item">
+            <!-- <div class="blog-list-item">
                 <div class="blog-image">
                     <img src="assets/img/blog.png" alt="" />
                 </div>
@@ -88,10 +88,10 @@
                         eligendi debitis?
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
-    <script src="js/blog.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 
 </html>
