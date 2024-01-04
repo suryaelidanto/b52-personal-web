@@ -20,3 +20,28 @@
     margin-right: 20px;
     font-size: 30px;
 }
+
+.container {
+    display: flex;
+    margin: 75px;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .left {
+        margin: auto;
+    }
+
+    .right {
+        margin-top: 50px;
+        margin-left: 0px
+    }
+
+    .skill {
+        flex-direction: column;
+    }
+}

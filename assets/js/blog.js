@@ -1,8 +1,8 @@
 const blogs = [{
     title: "Title 1",
-    content: "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
-    image: "default.jpg",
-    tech: ["reactjs"],
+    content: "LoremLorem",
+    image: "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/1200?cb=20210223094656",
+    // tech: ["reactjs"],
     createdAt: new Date()
 }]
 
@@ -79,12 +79,12 @@ function renderBlog() {
                 <div class="detail-blog-content">
                     ${getFullTime(blogs[index].createdAt)} | Ichsan Emrald Alamsyah
                 </div>
-                <p>
+                <p style="width: 100%">
                   ${blogs[index].content}
                 </p>
 
                 <div> 
-                    <p>${getDistanceTime(blogs[index].createdAt)}</p>
+                    <p style="width: 100%">${getDistanceTime(blogs[index].createdAt)}</p>
                 </div>
             </div>
         </div>

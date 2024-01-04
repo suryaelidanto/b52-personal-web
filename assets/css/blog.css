@@ -41,7 +41,7 @@ select {
   width: 100%;
   font-size: 20px;
   font-weight: 400;
-  padding: 8px;
+  padding: 8px 0px;
   margin-top: 5px;
   margin-bottom: 20px;
   background: #f4f3f3;
@@ -102,7 +102,7 @@ select {
 }
 
 .blog .blog-list .blog-list-item .blog-image {
-  flex: 1;
+  flex: 1
 }
 
 .blog .blog-list .blog-list-item .blog-image img {
@@ -197,4 +197,14 @@ select {
   font-size: 24px;
   line-height: 140%;
   text-align: justify;
+}
+
+@media only screen and (max-width: 576px) {
+  .blog .blog-list .blog-list-item .blog-image {
+    width: 100%
+  }
+
+  .blog .blog-list .blog-list-item {
+    flex-direction: column;
+  }
 }

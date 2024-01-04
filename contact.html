@@ -3,9 +3,11 @@
 
 <head>
     <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -26,8 +28,15 @@
                 <li>
                     <a href="contact.html" class="navbar-contact-btn"> Contact </a>
                 </li>
+                <i class="fa-solid fa-bars fa-2x" style="cursor: pointer;" id="hamburger-button"
+                    onclick="openHamburger()"></i>
             </div>
         </ul>
+        <div id="hamburger-navbar-container" class="hamburger-navbar-container hidden">
+            <a class="hamburger-navbar-link" href="index.html">Home</a>
+            <a class="hamburger-navbar-link" href="blog.html">Blog</a>
+            <a class="hamburger-navbar-link hamburger-active" href="contact.html">Contact Me</a>
+        </div>
     </nav>
 
     <div style="display: flex; width: 100%; justify-content: center; margin-top: 20px;">
@@ -52,6 +61,8 @@
     </div>
 
     <script src="assets/js/contact.js">
+    </script>
+    <script src="assets/js/nav.js">
     </script>
 </body>
 
