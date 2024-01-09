@@ -1,0 +1,4 @@
+status dari promise :
+1. pending -> janji belum dipenuhi (resolve / reject)
+2. resolve -> ditepati
+3. reject -> diingkari
